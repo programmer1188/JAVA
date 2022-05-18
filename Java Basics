@@ -144,7 +144,30 @@ public class Main
         double accurate = (double) x/y;
         System.out.println(accurate);
         
+        //problems
+        //Calculate the average
+        //Total 5 subjects
+	    
+	    double maths = 97.5;
+	    double english = 98;
+	    double science = 83.5;
+	    double drama = 75;
+	    double music = 96;
+	    
+	    double sum = maths + english + science + drama + music;
+	 
+	    double average = sum/5;
+	    System.out.println(average);
+		
+		//convert fahrenheit to celsius
+		double fahrenheit = 91;
+		double celsius;
+		celsius = (fahrenheit-32) * 5 / 9;
+		System.out.println(celsius);
+		
         
-        
-    }
+	}
 }
+
+        
+    
