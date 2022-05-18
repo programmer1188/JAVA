@@ -1,0 +1,109 @@
+//Control Flow
+//if else
+//if else-if else
+//Nested if
+//Switch 
+
+//Variable Scope - Block of code where the variable can be used.
+// Set of curly braces defines the variable scope {}
+
+//Boolean Expressions
+// < > >= <= == != 
+
+
+//Logical operators
+// AND - &&  OR- || NOT - !
+
+//Order of operators
+//Math operators (*, /, +, -)
+//Logical operators (!, &&, ||) 
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		boolean isCold = true;
+		
+		if(isCold){
+		    System.out.println("It's cold, wear a coat");
+		}else{
+		    System.out.println("It's not cold, do not wear a coat");
+		}
+		
+		
+		boolean greenLight = false;
+		
+		if(greenLight){
+		    System.out.println("Drive");
+		}else{
+		    System.out.println("Stop");
+		}
+		
+		
+		boolean yellowLight = true;
+		
+		if(greenLight){
+		    System.out.println("Drive");
+		}else if(yellowLight){
+		    System.out.println("Slow down");
+		}else{
+		    System.out.println("Stop");
+		}
+		
+		int ticketPrice = 10;
+		int age = 35;
+		boolean isStudent = true; 
+		
+		if(age<=15){
+		    ticketPrice = ticketPrice - 5;
+		}else if(age>60){
+		    ticketPrice = ticketPrice - 5;
+		}else if(isStudent){
+		    ticketPrice = ticketPrice - 5;
+		}
+		
+		System.out.println(ticketPrice);
+		
+		//As the discount is same for all 3 conditions so stop repetitve code
+		ticketPrice = 10;
+		if(age<=15 || age>60 || isStudent){
+		    ticketPrice = ticketPrice - 5;
+		}
+		
+		System.out.println(ticketPrice);
+		
+		
+		//Nested if
+		
+		int rating = 4;
+		if (rating >=0  && rating <=5) {
+		    if(rating <= 2){
+		        System.out.println("Please tell us the reason to improve.");
+		    }
+		    System.out.println("Thank you for your feedback.");
+		}
+		
+		
+		//Switch - instead of checking multiple if else statements
+		
+		int passcode = 345;
+		String coffeeType;
+		
+		switch(passcode){
+		    case 555: coffeeType = "Espresso";
+		    break;
+		    case 345: coffeeType = "Vanilla Latte";
+		    break;
+		    case 658: coffeeType = "Drip Coffee";
+		    break;
+		    default: coffeeType = "Unknown";
+		    break;
+		}
+		
+		System.out.println(coffeeType);
+		
+		
+		
+	}
+}
