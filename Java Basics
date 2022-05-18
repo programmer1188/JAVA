@@ -1,0 +1,150 @@
+// 1.Variables
+
+// Java : Case Sentitive(There is difference between upper and lower case letters) 
+// variables: has a name and value. values can be numbers or text with specifying datatype.
+// declaration and initialization 
+
+
+//data Type
+//1. Integer int MaxInt = 2147483647;
+//2. Long long muchMore = 2147483647 *10000000;
+//3. Float float fraction = 56.89; stores 6-7 decimal points;
+//4. Double double fraction = 99.275; stores 15 decimal points
+//5. String = "Text";
+//6. Character char answer = 'y'; //char can only store one letters
+//7. Boolean boolean fact = true;
+
+//Arithmetic Operations
+//1. Addition         int x = 2+3;
+//2. Subtraction      int y = 4-5;
+//3. Multiplication   int days = 7*5;
+//4. Division         double div = 5/2 = 2   5/2.0 = 2.5;
+//To get acuurate results to decimal points make sure one of the numbers is double.
+
+//Truncation double div = 5/2 = 2 here the actual answer is 2.5 but the value is truncated to 2
+
+//Cutting off the digits to the right of a decimal points
+
+
+//Casting: convert double to Integer or int to double
+
+//comments
+
+/*
+Multi line comments
+*/
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+        System.out.println(2+3);
+        
+        int passengers;  // variable declaration
+        passengers = 0;  // variable initialization
+        passengers = passengers+5; // 5 passengers boarded the bus at stop1
+        passengers = passengers-3; // 3 passengers droped the bus at stop2
+        passengers = passengers -1 + 5; // 1 passenger droped the bus at stop2 and 5 passengers boarded the bus at stop3
+        
+        //displaying variables
+        System.out.println(passengers);
+        
+        //multible variables
+        //keep track of no of stops and total fare colllected
+        int stops,fare;
+        stops =0;
+        fare=0;
+        stops = stops+1;
+        fare = fare+5;
+        stops = stops+1;
+        fare = fare+3;
+        stops = stops+1;
+        fare = fare+7;
+        
+        System.out.println(stops);
+        System.out.println(fare);
+        
+        //string variables : names, words, sentences or anything of characters
+        
+        String driver;     //declaration
+        driver = "David"; //initialization
+        
+        //count no of letters
+        int letters = driver.length();
+        System.out.println(letters);
+    
+        //change to upper case and lower case
+        driver = driver.toUpperCase();
+        System.out.println(driver);
+        
+        driver = driver.toLowerCase();
+        System.out.println(driver);
+        
+        //string concatenation joins 2 strings
+        String  driverFirstName;
+        driverFirstName = "David";
+        String  driverLastName;
+        driverLastName = "Dobrik";
+        
+        String driverFullName;
+        driverFullName = driverFirstName +" "+driverLastName;
+        
+        System.out.println(driverFullName);
+        
+        //String concatenation with integer ouput variables
+        System.out.println("The bus made $"+fare+" after "+stops+" stops");
+        System.out.println("The bus driver name is "+driverFullName);
+        
+        //program1
+        String language = "java";
+        String feeling = "Love";
+        feeling = feeling.toLowerCase();
+        language = language.toUpperCase();
+        System.out.println("I "+feeling+" "+language);
+        
+        
+        //Variables names - Camel casing
+        //Always use lowerCamelCase for variables names
+        //variable names are caseSentitive
+        //start name with letter
+        //cannot have white spaces in variable name
+        
+        //Declare and Initialize in same line;
+        String player = "Jack";
+        int price = 0;
+        int speed = 100;
+        int stockPrice = 75;
+        
+        //variable Arithmetic
+        double paid = 10;
+        double change = 3.25;
+        double tip = (paid-change)*0.2;
+        
+        //order of Operations
+        //1. Multiplication and Division
+        //2. Addition and Subtraction
+        
+        //Use parentheses () to avoid confusion. 
+        
+        
+        //Casting double to int
+        double current = 17;
+        double rate = 1.5;
+        double future  = current * rate;
+        System.out.println(future);
+        int approx = (int) future;  //Casting
+        System.out.println(approx);
+        
+        //Casting int to double
+        int x = 5;
+        int y = 2;
+        double div = x/y;
+        System.out.println(div);
+        double accurate = (double) x/y;
+        System.out.println(accurate);
+        
+        
+        
+    }
+}
