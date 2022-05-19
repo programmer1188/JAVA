@@ -1,0 +1,130 @@
+//Functions - block of code to perform a task. To reduce the repetion of code
+//Function calling: Referring to a Function by its name ex: println() 
+//Function definition: Contains the code a function executes. 
+
+//Easy to reuse code
+//Organize and group code
+//more maintainable code
+
+
+public class Main
+{
+    //public is a access modifier. which means anyone can access the function.
+    //void is return type which means it will not return anything.
+    //function name- name of the function we call.
+    
+    //function definition
+    public void chorus(){
+        //block of code
+        System.out.println("The Function chorus is executed ");
+    }
+    
+    boolean playButton = true;
+    public void playMusic(){
+        if(playButton){
+            System.out.println("Music is playing");
+        }else{
+            System.out.println("Music is paused");
+        }
+        
+    }
+    
+    //Parametric Functions
+    public void greeting(String Location){
+        System.out.println("Hello, "+ Location);
+    }
+    
+    //functions with return value
+    public int add(int a, int b){
+        int c = a+b;
+        return c;
+    }
+    
+    public double makechange(double itemCost, double dollarsProvided){
+        double change = dollarsProvided - itemCost;
+        return change;
+    }
+    
+    //Random value
+    //Use Random function to get random numbers Math.random()
+    //rool a dice to get random numbers from 1-6 
+    public int rollDice(){
+        double randomNumber = Math.random();
+        
+        randomNumber = randomNumber *6;
+        
+        //adding one so that the range is betwween 1 and 6.
+        randomNumber = randomNumber + 1;
+        
+        //Casting double to int
+        int randomInt = (int) randomNumber;
+        
+        return randomInt;
+    }
+    
+      //rool a dice to get random numbers from 1-8
+    public int rollDice1(){
+        double randomNumber = Math.random();
+        
+        randomNumber = randomNumber * 8;
+        
+        //adding one so that the range is betwween 1 and 6.
+        randomNumber = randomNumber + 1;
+        
+        //Casting double to int
+        int randomInt = (int) randomNumber;
+        
+        return randomInt;
+    }
+    
+       //rool a dice to get random numbers from 
+    public int rollDiceAll(int sides){
+        double randomNumber = Math.random();
+        
+        randomNumber = randomNumber * sides;
+        
+        //adding one so that the range is betwween 1 and 6.
+        randomNumber = randomNumber + 1;
+        
+        //Casting double to int
+        int randomInt = (int) randomNumber;
+        
+        return randomInt;
+    }
+    
+    
+	public static void main(String[] args){
+		
+		Main myObj = new Main();
+		//Function calling
+		myObj.chorus(); 
+		
+		myObj.greeting("New York"); //function call with Arguments
+		
+		String city="Dallas";
+		myObj.greeting(city);
+		
+		System.out.println(myObj.add(34,67));
+		
+		System.out.println(myObj.makechange(65.7,100));
+		
+		int roll1 = myObj.rollDice();
+		int roll2 = myObj.rollDice();
+		System.out.println(roll1);
+		System.out.println(roll2);
+		
+		int roll3 = myObj.rollDice1();
+		int roll4 = myObj.rollDice1();
+		System.out.println(roll3);
+		System.out.println(roll4);
+		
+		//Here in the above rool a dice function we are repeating the code by adding different functions 
+		//for different number of sides in a dice. 
+		//So pass a argument called sides to create a single function for any number of sides.
+		
+		int roll5 = myObj.rollDiceAll(10);
+		System.out.println(roll5);
+		
+		
+	}
+}
