@@ -1,4 +1,6 @@
 //Loops
+//while Loop
+//For Loop
 
 
 
@@ -24,10 +26,47 @@ public class Main
         System.out.println("Alarm is on");
     }
     
+    public int rollDice(){
+        double randomNumber = Math.random();
+        
+        randomNumber = randomNumber * 6;
+        
+        //adding one so that the range is betwween 1 and 6.
+        randomNumber = randomNumber + 1;
+        
+        //Casting double to int
+        int randomInt = (int) randomNumber;
+        
+        return randomInt;
+    }
+    
+    public int keepRolling(){
+        int dice1 = rollDice();
+        int dice2 = rollDice();
+        int dice3 = rollDice();
+        int dice4 = rollDice();
+        int dice5 = rollDice();
+        
+        int count = 1;
+        
+        while(!(dice1 == dice2 && dice2 == dice3 && dice3 == dice4 && dice4 == dice5)){
+            
+            dice1 = rollDice();
+            dice2 = rollDice();
+            dice3 = rollDice();
+            dice4 = rollDice();
+            dice5 = rollDice();
+            count = count + 1;
+        }
+        return count;
+        
+    }
     
 	public static void main(String[] args) {
 		
 		Main myObj = new Main();
 		myObj.alarm();
+		
+		System.out.println(myObj.keepRolling());
 	}
 }
