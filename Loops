@@ -1,0 +1,33 @@
+//Loops
+
+
+
+public class Main
+{
+    public void alarm(){
+        
+        boolean on = checkAlarm();
+        
+        while(on){
+            beep();
+            on = checkAlarm();
+        }
+    }
+    
+    public boolean checkAlarm()
+    {
+        boolean on = false;
+        return on;
+    }
+    
+    public void beep(){
+        System.out.println("Alarm is on");
+    }
+    
+    
+	public static void main(String[] args) {
+		
+		Main myObj = new Main();
+		myObj.alarm();
+	}
+}
