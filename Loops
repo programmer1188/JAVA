@@ -78,6 +78,16 @@ public class Main
         }
     }
     
+    public int countBlocks(int levels){
+        int total = 0;
+        for(int i=1;i<=levels;i++){
+            total += i*i;
+        }
+        
+        return total;
+        
+    }
+    
 	public static void main(String[] args) {
 		
 		Main myObj = new Main();
@@ -87,5 +97,8 @@ public class Main
 		
 		myObj.raiseAlarm(5);
 		myObj.raiseAlarm1(4);
+		
+	    int totalBlocks = myObj.countBlocks(5);
+	    System.out.println("Number of blocks: "+totalBlocks);
 	}
 }
