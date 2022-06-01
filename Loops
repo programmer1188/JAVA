@@ -2,6 +2,13 @@
 //while Loop
 //For Loop
 
+//Short hand operators
+// i = i+1 => i++
+// i = i-1 => i--
+
+// i = i+5 => i += 5 
+// i = i*2 => i *= 2
+
 
 
 public class Main
@@ -88,6 +95,33 @@ public class Main
         
     }
     
+    //public boolean play(){ }
+
+    
+    public int martingale(){
+        int money = 1000;
+        int target = 1200;
+        int bet = 10;
+        
+        while(money>bet){
+            
+            boolean win = play();
+            
+            if(win){
+                money += bet;
+            }else{
+                money -= bet;
+                bet *= 2;
+                
+            }
+            
+            if(money >= target){
+                break;
+            }
+        }
+        return money;
+    }
+    
 	public static void main(String[] args) {
 		
 		Main myObj = new Main();
@@ -100,5 +134,18 @@ public class Main
 		
 	    int totalBlocks = myObj.countBlocks(5);
 	    System.out.println("Number of blocks: "+totalBlocks);
+	    
+	    //Increment operator
+	    for(int i=1;i<=5;i++){
+	        System.out.println(i);
+	    }
+	    
+	    //Decrement operator
+	    for(int i=5;i>=1;i--){
+	        System.out.println(i);
+	    }
+	    
+	    //Martingale strategy
+	    int money = myObj.martingale();
 	}
 }
