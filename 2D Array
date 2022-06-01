@@ -1,0 +1,39 @@
+//2D Array 
+
+public class Main
+{
+    public static double studentAverage(int grades[][], int student){
+        int total = 0;
+        int subjects = grades.length; //each array represents a subject. 2D array is made of individual Arrays 
+        System.out.println("Grades of student: "+ student);
+        for(int i=0; i<subjects; i++){
+            System.out.print(grades[i][student]+" ");
+            total += grades[i][student];
+        }
+        
+        double average = total/(double)subjects;
+        
+        return average;
+        
+        
+    }
+    
+    
+	public static void main(String[] args) {
+		
+		Main myObj = new Main();
+		
+		int grades[][] = {{87,93,99,75,60},{93,70,98,90,75},{82,75,95,80,66},{90,75,99,85,70}};
+		
+		for(int i=0;i<4;i++){
+		    for(int j=0;j<5;j++){
+		        System.out.print(grades[i][j]+" ");
+		    }
+		    System.out.println();
+		}
+		
+		double avg = myObj.studentAverage(grades, 2);
+		
+		System.out.println(avg);
+	}
+}
