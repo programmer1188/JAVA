@@ -62,11 +62,30 @@ public class Main
         
     }
     
+    //while loop
+    public void raiseAlarm(int numOfWarnings){
+        int i=1;
+        while(i <= numOfWarnings){
+            System.out.println("Warning "+i);
+            i++;
+        }
+    }
+    
+    //For loop
+    public void raiseAlarm1(int numOfWarnings){
+        for(int i=1;i<=numOfWarnings;i++){
+            System.out.println("Warning "+i);
+        }
+    }
+    
 	public static void main(String[] args) {
 		
 		Main myObj = new Main();
 		myObj.alarm();
 		
 		System.out.println(myObj.keepRolling());
+		
+		myObj.raiseAlarm(5);
+		myObj.raiseAlarm1(4);
 	}
 }
