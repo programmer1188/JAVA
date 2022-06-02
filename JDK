@@ -1,0 +1,8 @@
+JDK - Java Development Kit (Oracle which owns Java). It has two main tools -> JRE AND JAVAC
+JRE - Java Runtime Environment - Includes all the code behind the built-in functions and variable types.
+JRE -> It includes JVM - Java Virtual Machine which allows java code to run on any machine or platform. JVM is a downlodable machine.  
+Javac - Java Compiler -> It translates code into computer understandable language which is (byte code)(0/1) 
+
+JAVA Code -> Javac(Compiler) -> ByteCode -> JVM -> Machine Code.
+JVM converts the byte code into different machine codes it is on like windows, ios, mobile etc
+
