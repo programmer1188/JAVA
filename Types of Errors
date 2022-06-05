@@ -1,0 +1,13 @@
+#3 Types of errors
+
+1. Syntax errors - Compile time error
+
+2. Run time Error - Error while running the program. Program immediately stops and might even crash.
+                    Like diving a number with zero(0). 
+                    Trying to access a index that is out of bounds of an array.
+   
+3. Bug (logical error) : Program does not give results as expected. 
+
+
+debugging 
+                    
