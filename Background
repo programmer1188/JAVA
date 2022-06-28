@@ -32,3 +32,7 @@ Compile -> javac file name (javac Hello.java) JDK
 Run -> java class name (java Hello) JVM
 
 
+-> All the statements are in main method and all methods are inside the class.
+-> Use proper variable names
+-> USe proper Indentation
+
