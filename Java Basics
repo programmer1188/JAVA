@@ -1,18 +1,24 @@
+Java supports Unicode
+
 // 1.Variables
 
 // Java : Case Sentitive(There is difference between upper and lower case letters) 
 // variables: has a name and value. values can be numbers or text with specifying datatype.
 // declaration and initialization 
 
+1 byte = 8 bits 
 
-//data Type
-//1. Integer int MaxInt = 2147483647;
-//2. Long long muchMore = 2147483647 *10000000;
-//3. Float float fraction = 56.89; stores 6-7 decimal points;
-//4. Double double fraction = 99.275; stores 15 decimal points
-//5. String = "Text";
-//6. Character char answer = 'y'; //char can only store one letters
-//7. Boolean boolean fact = true;
+//primitive data Types
+//1. Integer int MaxInt = 2147483647;  -> 4bytes
+//2. Long long muchMore = 2147483647 *10000000L;  -> 8 bytes
+//3. Float float fraction = 56.8f; stores 6-7 decimal points; ->4 bytes
+//4. Double double fraction = 99.275; stores 15 decimal points -> 8 bytes
+//5. Character char answer = 'y'; //char can only store one letters ->2 bytes
+//6. Boolean boolean fact = true; -> 1 byte
+
+Non primitive data Types
+String = "Text";
+Array
 
 //Arithmetic Operations
 //1. Addition         int x = 2+3;
