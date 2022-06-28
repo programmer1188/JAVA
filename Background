@@ -1,0 +1,34 @@
+Parent company: Sun Microsystems released in 1995
+Now owned by Oracle
+
+Invented By: James Gosling
+Save code as .java
+
+Facts:
+1. OOP: Object Oriented Programming
+2. Platform Independent Programming Language - WORA(Write once and Run Anywhere) -> Compile the code once and run it on any other machine
+3. Secure, Simple, Powerfull, Good Community Support
+
+Used In: Mobile, Desktop, Web, Database Connection
+
+Framework: Spring
+
+How code is executed
+
+Source code(Hello.java) -> Java compiler -> ByteCode(Hello.class) -> JVM(Interpreter) to run Bytecode -> OS
+
+JVM is platform dependent.
+
+Compiler -> JDK -> Latest Version 17 But use Java 8 features -> Compiler converts all instructions into machine language in one go.
+Interpreter -> JVM
+Editor -> Sublime, Visual Studio Code
+IDE(Integrated Development Environment) -> Eclipse, Netbeans, IntelliJ IDEA
+
+Debugging: Remove bugs
+
+Jshell -> Read-Evaluate-Print Loop (REPL) 
+
+Compile -> javac file name (javac Hello.java) JDK
+Run -> java class name (java Hello) JVM
+
+
