@@ -9,16 +9,22 @@ Java supports Unicode
 1 byte = 8 bits 
 
 //primitive data Types
-//1. Integer int MaxInt = 2147483647;  -> 4bytes
-//2. Long long muchMore = 2147483647 *10000000L;  -> 8 bytes
-//3. Float float fraction = 56.8f; stores 6-7 decimal points; ->4 bytes
-//4. Double double fraction = 99.275; stores 15 decimal points -> 8 bytes
-//5. Character char answer = 'y'; //char can only store one letters ->2 bytes
-//6. Boolean boolean fact = true; -> 1 byte
+1. Integer int MaxInt = 2147483647;  -> 4bytes
+2. Long long muchMore = 2147483647 *10000000L;  -> 8 bytes
+3. Float float fraction = 56.8f; stores 6-7 decimal points; ->4 bytes
+4. Double double fraction = 99.275; stores 15 decimal points -> 8 bytes
+5. Character char answer = 'y'; //char can only store one letters ->2 bytes
+6. Boolean boolean fact = true; -> 1 byte
+7. Byte
+8. Short
+
 
 Non primitive data Types
 String = "Text";
 Array
+Class
+Object
+Interface
 
 //Arithmetic Operations
 //1. Addition         int x = 2+3;
