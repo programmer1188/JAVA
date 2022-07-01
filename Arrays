@@ -1,5 +1,6 @@
 
-//Arrays
+//Arrays in java are treated as Objects 
+// So we use new keyword to create an array
 
 
 
