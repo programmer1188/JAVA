@@ -7,6 +7,57 @@
 //more maintainable code
 
 
+##############################
+
+Functions Vs Methods
+
+******Functions are called Directly*****************
+public class Main
+{
+    
+    public static void printMyName(){
+        System.out.println("My name is Madhu K ");    
+    }
+    
+    public static int printSum(int a, int b){
+        return a+b;
+    }
+    
+    public static void calculateFactorial(int a){
+        int factorial = 1;
+        while(a>=1){
+            factorial *= a;
+            a--;
+        }
+        
+        System.out.println("Factorial is : " + factorial);
+    }
+    
+	public static void main(String[] args) {
+	
+	    
+		printMyName();
+		
+		int a = 5, b = 7;
+		
+		int sum  = printSum(a,b);
+		System.out.println(sum);
+		
+	    calculateFactorial(6);
+	}
+	
+}
+
+********Methods are called using class objects*******************
+If we are using the class objects to call a function that is a Method.
+
+
+
+
+#################################################################################
+
+
+
 public class Main
 {
     //public is a access modifier. which means anyone can access the function.
