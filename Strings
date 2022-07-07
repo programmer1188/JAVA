@@ -1,0 +1,37 @@
+String - Strings are immutable - Cannot be modified
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		String firstName = "Madhu";
+		String lastName = "Karumuru";
+		
+		//concatenation
+		String fullName = firstName +" "+ lastName;
+		
+		System.out.println(fullName);
+		
+		
+		//Compare 
+		String s1 = "Madhu";
+		String s2 = "Madhu";
+		
+		//Use compareTo function as it works effectively than s1==s2
+		if(s1.compareTo(s2)==0){
+		    System.out.println("s1 is equal to s2");
+		}else{
+		    System.out.println("s1 is not equal to s2");
+		}
+		
+		if(s1==s2){
+		    System.out.println("s1 is equal to s2");
+		}else{
+		    System.out.println("s1 is not equal to s2");
+		}
+		    
+		
+	}
+}
+
+
