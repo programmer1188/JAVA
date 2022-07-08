@@ -12,6 +12,11 @@ public class Main
 		
 		System.out.println(fullName);
 		
+		char f = firstName.charAt(0);
+		char l = lastName.charAt(0);
+		System.out.println("FirstName Initial: "+ f);
+		System.out.println("LastName Initial: "+ l);
+		
 		
 		//Compare 
 		String s1 = "Madhu";
@@ -33,5 +38,4 @@ public class Main
 		
 	}
 }
-
 
