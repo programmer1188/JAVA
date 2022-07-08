@@ -1,0 +1,87 @@
+Class - Act as blueprints for everything we represent using code 
+Ex: Music player, Restaurant bill 
+
+It has Attributes/properties - Base, Height, side length
+It has Behaviors/Methods - findArea()
+
+
+Instances - It is a object created from class blueprint
+
+Constructor - These instances are created using Constructor which is a special method inside class to create and intialize instances.
+
+constructor name is same as class name. 
+constructor always returns the instance of the class.
+
+we can add parameters to give a dynamic value for each attribute. parameters name can be different than the attribute name.
+
+This keyword and Dot operator are used to access the attributes of the Instance  
+
+public Triangle(double base, double height, double one, double two, double three){
+  this.base = base;
+  this.height = height;
+  this.one = one;
+  this.two = two;
+  this.three = three;
+}
+
+Call the constructor with new keyword;
+
+Triangle triangleA = new Triangle(15,8,15,8,17);
+Triangle triangleB = new Triangle(3, 2.598,3,3,3);
+
+Now this Triangle class is a datatype.
++
+############################################################
+Main.java
+
+public class Main
+{
+
+	public static void main(String[] args) {
+		Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
+		Triangle triangleB = new Triangle(3, 2.598,3, 3, 3);
+		
+		double areaA = triangleA.areaTriangle();
+		System.out.println("Area of Trianggle A: "+ areaA);
+		
+		double areaB = triangleB.areaTriangle();
+		System.out.println("Area of Trianggle B: "+ areaB);
+		
+	}
+}
+
+
+Triangle.java
+public class Triangle{
+    double base;     //Atrributes
+    double height;
+    double one;
+    double two;
+    double three;
+    
+    public Triangle(double base, double height, double one, double two, double three){  //Parameters -> inputs for attribute sof triangle class
+        this.base = base;
+        this.height = height;
+        this.one = one;
+        this.two = two;
+        this.three = three;
+    }
+    
+    public double areaTriangle(){
+        
+        return (this.base*this.height) / 2;
+        
+    }
+}
+
+
+#################################################
+
+Instance Method vs Static Method.
+
+Instance methods are reffered as non-static methods as you need an instance to use them.
+Class methods are reffered as static methods as you do not need an instance to use them. 
+
+
+
+
