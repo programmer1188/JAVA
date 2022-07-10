@@ -86,6 +86,44 @@ Instance Method vs Static Method.
 Instance methods are reffered as non-static methods as you need an instance to use them.
 Class methods are reffered as static methods as you do not need an instance to use them. 
 
+##############################################################################################
+Main.java
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		
+		Students s1 = new Students("Madhu","Karumuru",2023,3.80,"Information Systems");
+		
+		System.out.println(s1.firstName +" "+ s1.lastName);
+		s1.incrementYear();
+		System.out.println(s1.gradYear);
+	}
+}
+
+Students.java
+
+public class Students{
+    String firstName;
+    String lastName;
+    int gradYear;
+    double gpa;
+    String major;
+    
+    public Students(String firstName, String lastName, int gradYear, double gpa, String major){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gradYear = gradYear;
+        this.gpa = gpa;
+        this.major = major;
+    }
+    
+    public void incrementYear(){
+        this.gradYear = this.gradYear + 1;
+    }
+    
+}
 
 
 
