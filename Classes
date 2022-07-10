@@ -2,7 +2,7 @@ Class - Act as blueprints for everything we represent using code
 Ex: Music player, Restaurant bill 
 
 It has Attributes/properties - Base, Height, side length
-It has Behaviors/Methods - findArea()
+It has Behaviors/Methods - findArea() - A behavior is a function located inside a class that can perform a particular action.
 
 
 Instances - It is a object created from class blueprint
