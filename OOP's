@@ -1,3 +1,22 @@
+Object Oriented Programming - Aim is to bind together the data and the functions that operate on them 
+                              so that no other part of the code can access this data except that function.
+			 
+Access Modifiers:
+1. Public -> Accessible in all classes in your application.
+2. Protected -> Accessible within the package in which it is defined and its sub classes.
+3. Private -> Accessible only within the class in which it is defined.
+4. Default(Without using any modifier) -> Accessible within the same class and package within which its class is defined.
+
+Class, Object, Method, Method Passing
+
+Four Pillars of OOP's
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism -> i Compile-time polymorphism  ii Runtime polymorphism
+
+
+
 Class - Act as blueprints for everything we represent using code 
 Ex: Music player, Restaurant bill 
 
