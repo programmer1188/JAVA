@@ -145,4 +145,62 @@ public class Students{
 }
 
 
+#####################################################################################
+
+Main.java
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        	Tree t1 = new Tree(125,5,"Oak");
+        	Tree t2 = new Tree(90,30,"Maple");
+        	Tree t3 = new Tree(87,28,"Palm");
+        	
+        	System.out.println(t1.treeType);
+        	
+        	t1.announceTallTree();
+        	t2.announceTallTree();
+        	
+        	System.out.println(Tree.trunkColor);
+        	
+        	t1.announceTree();
+	}
+}
+
+
+
+
+Tree.java
+
+public class Tree{
+    double height;            //Non static attributes/members or Instance attributes
+    double trunkDiameter;
+    String treeType;
+    static String trunkColor = "Brown"; //static member as truck is same for all trees
+    
+    Tree(double height, double trunkDiameter, String treeType){       //Contructor to create instances
+        this.height = height;
+        this.trunkDiameter = trunkDiameter;
+        this.treeType = treeType;
+    }
+    
+    void grow(){                                      // Method
+        this.height = this.height + 10;
+        this.trunkDiameter = this.trunkDiameter + 1;
+    }
+    
+    void announceTallTree(){
+        if(this.height > 100){
+        	    System.out.println("Thats a Tall "+this.treeType+ " Tree");
+        }else{
+            System.out.println("Thats a Small "+this.treeType+ " Tree");
+        }
+    }
+    
+    static void announceTree(){                    //Static Method
+        System.out.println("Look out for that "+trunkColor+" tree!");
+    }
+}
+
 
