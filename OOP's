@@ -285,4 +285,55 @@ public class Tree{
     }
 }
 
+#########################################################################################
+Main.java
+
+public class Main
+{
+	public static void main(String[] args) {
+	    BankAccount b1 = new BankAccount("Madhu",2980);
+	    BankAccount b2 = new BankAccount("Bala",4567);
+	    
+	    b1.printInfo();
+	    
+	    b1.withDraw(500);
+	    
+	    b1.printInfo();
+	    
+	    b1.deposit(1000);
+	    
+	    b1.printInfo();
+	    
+	}
+}
+
+BankAccount.java
+
+public class BankAccount{
+    private String owner;
+    private double balance;
+    
+    public BankAccount(String owner, double balance){
+        this.owner = owner;
+        this.balance = Math.max(balance, 0);
+    }
+    
+    public void withDraw(double withDrawAmount){
+        if(withDrawAmount <= this.balance){
+            this.balance = this.balance - withDrawAmount;
+        }
+    }
+    
+    public void deposit(double depositAmount){
+        if(depositAmount > 0){
+            this.balance = this.balance + depositAmount;
+        }
+    }
+    
+    public void printInfo(){
+        System.out.println("Account Name: "+this.owner+"\nBalance: "+this.balance);
+    }
+    
+}
+
 
