@@ -203,4 +203,86 @@ public class Tree{
     }
 }
 
+#############################################################################################
+
+Encapulation -> We want data hidden from other claases so that they cannot use it directly.
+
+
+-> Use Access modifiers to achieve Encapsulation
+-> Declare all attributes to private 
+-> Write public methods to get and set all the values of each attribute with the public access modifier.
+
+Main.java
+
+public class Main
+{
+	public static void main(String[] args) {
+        	Tree t1 = new Tree(125,5,"Oak");
+        	Tree t2 = new Tree(90,30,"Maple");
+        	Tree t3 = new Tree(87,28,"Palm");
+        	
+        //	System.out.println(t1.treeType);  cannot access as treetype is private
+        	
+        //	System.out.println(Tree.trunkColor); cannot accessas truckcolor is private
+        	
+        	System.out.println(t1.getHeight());  //access private attributes usign public methods
+        	System.out.println(t2.getTrunkDiameter());
+        	
+        	t1.setTrunkDiameter(35);      //passing value to seter methods
+        	
+        	System.out.println(t1.getTrunkDiameter());
+	}
+}
+
+
+
+
+Tree.java
+
+public class Tree{
+    private double height;            //Non static attributes/members or Instance attributes
+    private double trunkDiameter;
+    private String treeType;
+    private static String trunkColor = "Brown"; //static member as truck is same for all trees
+    
+    public Tree(double height, double trunkDiameter, String treeType){       //Contructor to create instances
+        this.height = height;
+        this.trunkDiameter = trunkDiameter;
+        this.treeType = treeType;
+    }
+    
+    public double getHeight(){                  //getter methods to retieve attributes data
+        return height;
+    }
+    
+    public double getTrunkDiameter(){
+        return trunkDiameter;
+    }
+    
+    public String getTreeType(){
+        return treeType;
+    }
+    
+    public void setTrunkDiameter(double truckDiameter){
+        this.trunkDiameter = truckDiameter;
+    }
+    
+    public void grow(){                                      // Method
+        this.height = this.height + 10;
+        this.trunkDiameter = this.trunkDiameter + 1;
+    }
+    
+    public void announceTallTree(){
+        if(this.height > 100){
+        	    System.out.println("Thats a Tall "+this.treeType+ " Tree");
+        }else{
+            System.out.println("Thats a Small "+this.treeType+ " Tree");
+        }
+    }
+    
+    static void announceTree(){                    //Static Method
+        System.out.println("Look out for that "+trunkColor+" tree!");
+    }
+}
+
 
