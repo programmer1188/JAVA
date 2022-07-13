@@ -336,4 +336,17 @@ public class BankAccount{
     
 }
 
+########################################################################################################
+
+Inheritance - Child class inherits properties from parent class.
+
+-> Avoids duplication of code
+-> Additions and modifications to the superclass will automatically affect the subclass.
+-> promotes code reusability and scalability
+
+Single Level Inheritance -> One Superclass and one subclass.  Employee <- Salesperson
+Hierarchical Inheritance -> One Superclass and many subclasses. Employee <- Analyst, Salesperson
+Multi Level Inheritance - > Super class having another Super class along with subclass. Person <- Employee <- Analyst, Salesperson.
+
+
 
