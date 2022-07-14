@@ -435,4 +435,13 @@ public class Employee{
     
 }
 
+##########################################################################################333
+
+Polymorphism: The ability for an object or function to take many forms.
+
+Java supports 2 types of polymorphism
+-> Run time polymorphism
+-> Compile time polymorphism
+
+
 
