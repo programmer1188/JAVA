@@ -435,13 +435,93 @@ public class Employee{
     
 }
 
-##########################################################################################333
+##################################################################################################
 
-Polymorphism: The ability for an object or function to take many forms.
+Polymorphism: The ability for an object or function to take many forms(Behaviours).
 
 Java supports 2 types of polymorphism
 -> Run time polymorphism
 -> Compile time polymorphism
 
+Method Overloading: Same method name with different parameters. 
+->Compile-time polymorphism is achieved through method overloading. At compile-time, java knows which method to call by checking the method signatures. 
+  So this is called compile-time polymorphism or static or early binding.
+  
+##############################################
+// compile-time polymorphism
+public class GFG {
+ 
+    // First addition function
+    public static int add(int a, int b)
+    {
+        return a + b;
+    }
+ 
+    // Second addition function
+    public static double add(
+        double a, double b)
+    {
+        return a + b;
+    }
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        // Here, the first addition
+        // function is called
+        System.out.println(add(2, 3));
+ 
+        // Here, the second addition
+        // function is called
+        System.out.println(add(2.0, 3.0));
+    }
+}
 
+Output:
+5
+5.0
+
+###############################################
+
+
+Method Overriding: Same Method name and same parameters in different classes. class A Extends class B{}
+Method overriding says the child class has the same method as declared in the parent class.
+
+The Runtime polymorphism can be achieved by method overriding. 
+Java virtual machine determines the proper method to call at the runtime, not at the compile time. It is also called dynamic or late binding.
+
+// Java program to demonstrate
+// runtime polymorphism
+ 
+// Implementing a class
+class Test {
+ 
+    // Implementing a method
+    public void method()
+    {
+        System.out.println("Method 1");
+    }
+}
+ 
+// Defining a child class
+public class GFG extends Test {
+ 
+    // Overriding the parent method
+    public void method()
+    {
+        System.out.println("Method 2");
+    }
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        Test test = new GFG();
+ 
+        test.method();
+    }
+}
+
+Output:
+
+Method 2
 
