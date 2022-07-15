@@ -525,3 +525,72 @@ Output:
 
 Method 2
 
+
+########################################################################
+
+Main.java
+public class Main
+{
+	public static void main(String[] args) {
+		Contacts one = new Contacts("Madhu", new PhoneNumber("9016783656"));
+		Contacts two = new Contacts("Bala", new PhoneNumber(1,"9016783012"));
+		Contacts three = new Contacts("Reddy", new PhoneNumber("9016789018"));
+		Contacts four = new Contacts("Venkata","karumurimadhu2@gmail.com");
+		Contacts five  = new Contacts("sudhana", new PhoneNumber("9016781908"),"karumuruvit@gmail.com");
+	}
+}
+
+
+Contacts.java
+
+public class Contacts{
+    private String name;
+    private String email;
+    private PhoneNumber phoneNumber;
+    
+    public Contacts(String name, PhoneNumber phoneNumber, String email){
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+    
+    public Contacts(String name, PhoneNumber phoneNumber){
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+    }
+    
+    public Contacts(String name, String email){
+        this.name = name;
+        this.email = email;
+    }
+    
+    //public String toString(){                     use tostring method to display contacts info
+    //    return "Contact{"+"name="+
+    //}
+}
+
+
+PhoneNumber.java
+
+public class PhoneNumber{
+    private int countryCode;
+    private String phoneNumber;
+    
+    public PhoneNumber(String phoneNumber){
+        if(phoneNumber.length()>10){
+            this.countryCode = Integer.parseInt(phoneNumber.substring(0, phoneNumber.length()-10));
+            this.phoneNumber = phoneNumber.substring(phoneNumber.length()-10);
+        }else {
+            this.countryCode = 1;
+            this.phoneNumber = phoneNumber;
+        } 
+    }
+    
+    public PhoneNumber(int countryCode, String PhoneNumber){
+        this.countryCode = countryCode;
+        this.phoneNumber = phoneNumber;
+    }
+}
+
+###########################################################################################################33
+
