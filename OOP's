@@ -592,5 +592,13 @@ public class PhoneNumber{
     }
 }
 
-###########################################################################################################33
+###########################################################################################################
+
+Abstraction: It is used to hide implementation complexity.
+
+Just give input and expected output do not worry about implementation of how it is done.
+
+Abstract classes and Interfaces
+
+Abstract classes are used to implement abstraction in java.
 
